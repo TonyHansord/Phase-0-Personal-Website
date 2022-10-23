@@ -36,45 +36,15 @@
           </div>
 
           <div class="dropdown">
-            <svg
-              id="hamburger"
-              width="31"
-              height="29"
-              viewBox="0 0 31 29"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <line
-                x1="1.5"
-                y1="1.59268"
-                x2="29.5"
-                y2="1.59268"
-                stroke="black"
-                stroke-width="3"
-                stroke-linecap="round"
-              />
-              <line
-                x1="1.5"
-                y1="14.4122"
-                x2="29.5"
-                y2="14.4122"
-                stroke="black"
-                stroke-width="3"
-                stroke-linecap="round"
-              />
-              <line
-                x1="1.5"
-                y1="27.2317"
-                x2="29.5"
-                y2="27.2317"
-                stroke="black"
-                stroke-width="3"
-                stroke-linecap="round"
-              />
-            </svg>
+            <button class="hamburger toggle-on">
+              <img src="assets/hamburger.svg" alt="" />
+            </button>
             <div class="dropdown-content">
-              <a href="index.html">
-                <li class="menu-item home-item">About</li>
+              <button class="hamburger toggle-off">
+                <img src="assets/hamburger.svg" alt="hamburger-icon" />
+              </button>
+              <a #id="about-link" href="index.html">
+                <li class="menu-item about-item">About</li>
               </a>
               <a href="index.html">
                 <li class="menu-item skills-item">Work</li>
@@ -82,13 +52,34 @@
               <a href="index.html">
                 <li class="menu-item contact">Contact</li>
               </a>
-              <a href="index.html">
+              <a href="assets/Anthony Hansord Resume.pdf">
                 <button class="menu-item resume">Resume</button>
               </a>
             </div>
           </div>
         </ul>
       </nav>
+      <article id="about">
+        <div class="about-container">
+          <img class="tony-img" src="assets/tony-head-bw.jpg" alt="Tony" />
+
+          <div class="heading-container">
+            <h1 class="name">Hello! I am Tony.</h1>
+            <h2 class="sub-heading">I am a Mobile app and Web Developer</h2>
+            <p class="about-me">
+              Based in Melbourne, I have a strong passion for developing
+              websites and web apps. I have also completed mobile app projects
+              from start to finish.
+            </p>
+            <ul class="skills-list">
+              <li class="tech-skills">Javascript</li>
+              <li class="tech-skills">HTML/CSS</li>
+              <li class="tech-skills">Swift</li>
+            </ul>
+            <button class="my-work-btn">Check out my work</button>
+          </div>
+        </div>
+      </article>
     </section>
     <section class="light-section"></section>
     <section></section>

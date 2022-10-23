@@ -1,13 +1,12 @@
-const hamburger = document.getElementById("hamburger");
+const displayMenuBtn = document.querySelector(".toggle-on");
+const hideMenuBtn = document.querySelector(".toggle-off");
 const menuContent = document.querySelector(".dropdown-content");
+const menuClasses = menuContent.classList;
 
-console.log(menuContent);
+displayMenuBtn.addEventListener("click", function () {
+  menuClasses.add("toggle");
+});
 
-function toggleMenu() {
-  const menuClasses = menuContent.classList;
-  menuClasses.contains("toggle")
-    ? menuClasses.remove("toggle")
-    : menuClasses.add("toggle");
-}
-
-hamburger.addEventListener("click", toggleMenu);
+hideMenuBtn.addEventListener("click", function () {
+  menuClasses.remove("toggle");
+});
