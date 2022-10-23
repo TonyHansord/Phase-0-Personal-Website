@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Pangolin&display=swap");
+
+$colored-gradient: linear-gradient(to bottom right, #d3ffa8, #a6ffd4);
+$light-gradient: linear-gradient(to bottom right, #ffffff, #edeaea);
+$primary-font: "Oxygen Mono", monospace;
+$primary-text-color: #313131;
+
+@mixin button() {
+  background-color: black;
+  font-family: $primary-font;
+  font-size: 1rem;
+  color: #a6ffd4;
+  border-radius: 9px;
+  border-style: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: $primary-text-color;
+  font-family: $primary-font;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+}
+
+nav {
+  padding: 0 2%;
+}
+
+button {
+  @include button;
+}
+
+.colored-section {
+  background: $colored-gradient;
+}
+
+.light-section {
+  background: $light-gradient;
+}
+
+#nav-list {
+  position: relative;
+  display: flex;
+
+  li {
+    list-style: none;
+  }
+
+  a:hover {
+    background-color: #ffffff;
+  }
+
+  #logo-container {
+    width: 100%;
+  }
+  #logo {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    p {
+      width: 100%;
+      font-size: 1.5rem;
+    }
+    svg {
+      width: 5rem;
+    }
+  }
+
+  .dropdown {
+    display: flex;
+    justify-content: center;
+  }
+
+  .dropdown-content a {
+    padding: 1rem;
+  }
+
+  .dropdown-content a:last-child:hover {
+    background-color: transparent;
+  }
+
+  .dropdown-content button:hover {
+    background-color: #737373;
+  }
+}
+// Mobile
+@media (max-width: 650px) {
+  #hamburger {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    cursor: pointer;
+  }
+
+  .dropdown {
+    display: inline-block;
+    user-select: none;
+  }
+
+  .dropdown-content {
+    background-color: #a6ffd4;
+    right: -10%;
+    width: 40vw;
+    top: 165%;
+    position: absolute;
+    display: none;
+    z-index: 1;
+    a {
+      padding: 1rem;
+    }
+    button {
+      width: 100%;
+    }
+  }
+  .dropdown:active {
+    background-color: #a6ffd4;
+  }
+
+  .toggle {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 650px) {
+  #hamburger {
+    display: none;
+  }
+
+  .dropdown-content {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+
+    button {
+      padding: 0.5rem 2rem;
+    }
+  }
+}

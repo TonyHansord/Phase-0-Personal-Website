@@ -1,3 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Pangolin&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #313131;
+  font-family: "Oxygen Mono", monospace;
+  text-decoration: none;
+}
 
+section {
+  padding: 2rem;
+}
+
+nav {
+  padding: 0 2%;
+}
+
+button {
+  background-color: black;
+  font-family: "Oxygen Mono", monospace;
+  font-size: 1rem;
+  color: #a6ffd4;
+  border-radius: 9px;
+  border-style: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.colored-section {
+  background: linear-gradient(to bottom right, #d3ffa8, #a6ffd4);
+}
+
+.light-section {
+  background: linear-gradient(to bottom right, #ffffff, #edeaea);
+}
+
+#nav-list {
+  position: relative;
+  display: flex;
+}
+#nav-list li {
+  list-style: none;
+}
+#nav-list a:hover {
+  background-color: #ffffff;
+}
+#nav-list #logo-container {
+  width: 100%;
+}
+#nav-list #logo {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+#nav-list #logo p {
+  width: 100%;
+  font-size: 1.5rem;
+}
+#nav-list #logo svg {
+  width: 5rem;
+}
+#nav-list .dropdown {
+  display: flex;
+  justify-content: center;
+}
+#nav-list .dropdown-content a {
+  padding: 1rem;
+}
+#nav-list .dropdown-content a:last-child:hover {
+  background-color: transparent;
+}
+#nav-list .dropdown-content button:hover {
+  background-color: #737373;
+}
+
+@media (max-width: 650px) {
+  #hamburger {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    cursor: pointer;
+  }
+  .dropdown {
+    display: inline-block;
+    user-select: none;
+  }
+  .dropdown-content {
+    background-color: #a6ffd4;
+    right: -10%;
+    width: 40vw;
+    top: 165%;
+    position: absolute;
+    display: none;
+    z-index: 1;
+  }
+  .dropdown-content a {
+    padding: 1rem;
+  }
+  .dropdown-content button {
+    width: 100%;
+  }
+  .dropdown:active {
+    background-color: #a6ffd4;
+  }
+  .toggle {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 650px) {
+  #hamburger {
+    display: none;
+  }
+  .dropdown-content {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+  }
+  .dropdown-content button {
+    padding: 0.5rem 2rem;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
