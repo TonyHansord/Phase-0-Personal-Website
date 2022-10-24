@@ -126,6 +126,13 @@ a button {
   font-size: 2rem;
 }
 
+#skills-wrapper {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  text-align: left;
+}
+
 .skills-list {
   list-style: none;
 }

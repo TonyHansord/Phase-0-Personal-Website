@@ -109,6 +109,13 @@ a button {
   font-size: 2rem;
 }
 
+#skills-wrapper {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  text-align: left;
+}
+
 .skills-list {
   list-style: none;
 }
@@ -131,11 +138,11 @@ a button {
     border-radius: 5px;
     position: absolute;
     right: 1rem;
+    z-index: 2;
     margin-top: 0;
     cursor: pointer;
     width: fit-content;
     display: flex;
-    z-index: 2;
   }
   [class*=toggle-] img {
     width: 1.5rem;
@@ -156,7 +163,6 @@ a button {
     border-radius: 10px;
     top: 0;
     right: 0;
-    height: 100%;
   }
   .dropdown-content a {
     padding: 1rem;
@@ -174,7 +180,6 @@ a button {
   .toggle {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
   #about {
     justify-content: center;
