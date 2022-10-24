@@ -102,7 +102,7 @@ a button {
 }
 
 .name {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 .sub-heading {
@@ -122,7 +122,8 @@ a button {
 
 .tech-skills::before {
   content: ">";
-  padding-right: 5px;
+  padding-right: 10px;
+  color: #fff;
 }
 
 .about-me {
