@@ -1,16 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Pangolin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-size: 16px;
-  color: #313131;
-  font-family: "Oxygen Mono", monospace;
+  font-family: "Ubuntu", sans-serif;
   text-decoration: none;
-}
-
-section {
-  padding: 1rem 2rem;
 }
 
 nav {
@@ -18,8 +13,8 @@ nav {
 }
 
 a button {
-  background-color: black;
-  font-family: "Oxygen Mono", monospace;
+  background-color: #333954;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1rem;
   color: #a6ffd4;
   border-radius: 9px;
@@ -29,11 +24,19 @@ a button {
 }
 
 .colored-section {
-  background: linear-gradient(to bottom right, #d3ffa8, #a6ffd4);
+  background-image: linear-gradient(to bottom right, #d3ffa8, #a6ffd4);
+  color: #333954;
+  padding: 1rem 2rem;
 }
 
-.light-section {
-  background: linear-gradient(to bottom right, #ffffff, #edeaea);
+.dark-section {
+  background-image: linear-gradient(to bottom right, #4c547c, #333954);
+  color: #a6ffd4;
+  padding: 1rem 2rem;
+}
+
+.sub-heading {
+  font-size: 2.5rem;
 }
 
 #nav-list {
@@ -96,24 +99,28 @@ a button {
   padding: 1rem 5rem;
   width: 100%;
 }
+.about-container .heading-container .sub-heading {
+  font-size: 1.5rem;
+}
 
 .dropdown-content #about-link {
   margin-top: 4rem;
 }
 
 .name {
-  font-size: 3.5rem;
-}
-
-.sub-heading {
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 #skills-wrapper {
   display: flex;
   gap: 1rem;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: left;
+}
+
+#skills-heading {
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .skills-list {
@@ -129,7 +136,20 @@ a button {
 .about-me {
   padding: 2rem 0;
   font-size: 1rem;
-  font-family: "Oxygen Mono", monospace;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#card-container {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 2rem;
+  place-items: center;
+  padding: 5rem;
+}
+#card-container .card {
+  height: 300px;
+  width: 300px;
+  background-color: #a6ffd4;
 }
 
 @media (max-width: 650px) {
@@ -207,7 +227,7 @@ a button {
   .about-container .heading-container .about-me {
     padding: 2rem 0;
     font-size: 1rem;
-    font-family: "Oxygen Mono", monospace;
+    font-family: "Ubuntu", sans-serif;
   }
 }
 @media (min-width: 650px) {
