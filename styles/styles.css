@@ -37,6 +37,7 @@ a button {
 
 .sub-heading {
   font-size: 2.5rem;
+  text-align: center;
 }
 
 #nav-list {
@@ -153,13 +154,49 @@ display: flex;
 width: 80vw;
 gap: 2rem;
 justify-content: center;
+text-align: center;
 
 }
 
 #card-container .card {
   height: 300px;
   width: 300px;
-  background-color: #a6ffd4;
+  background-color: #333954;
+  
+  color: #a6ffd4;
+  display: flex;
+  flex-direction: column;
+  border-radius: 9px;
+  text-align: left;
+}
+
+.card-heading, .card-cta {
+
+height: 20%;
+}
+
+.card-content {
+display: flex;
+
+border-width: 2px 0;
+border-style: solid;
+border-color: #a6ffd4;
+height: 80%;
+
+}
+
+.card-cta {
+
+justify-content: center;
+align-items: center;
+}
+
+.card-cta a {
+
+width: 100%;
+text-decoration: none;
+color: #a6ffd4;
+
 }
 
 @media (max-width: 650px) {
@@ -241,7 +278,7 @@ justify-content: center;
   }
   #card-container {
    display: flex;
-   flex-direction: column;
+   flex-direction: column; 
   }
   
   .row {
@@ -252,12 +289,10 @@ justify-content: center;
   .card {
   width: 80vw;
   height 80vw;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  gap-color: #333954;
   
   }
+  
+  
   
 }
 @media (min-width: 650px) {
