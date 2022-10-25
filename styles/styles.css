@@ -23,6 +23,13 @@ a button {
   cursor: pointer;
 }
 
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
 .colored-section {
   background-image: linear-gradient(to bottom right, #d3ffa8, #a6ffd4);
   color: #333954;
@@ -47,7 +54,7 @@ a button {
   list-style: none;
 }
 #nav-list a:hover {
-  background-color: #ffffff;
+  color: #ffffff;
 }
 #nav-list #logo-container {
   width: 100%;

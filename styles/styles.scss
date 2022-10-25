@@ -43,6 +43,13 @@ a button {
   @include button;
 }
 
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
 .colored-section {
   @include section($primary-text-color, $colored-gradient);
 }
@@ -64,7 +71,7 @@ a button {
   }
 
   a:hover {
-    background-color: #ffffff;
+    color: #ffffff;
   }
 
   #logo-container {
