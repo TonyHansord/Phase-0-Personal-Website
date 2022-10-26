@@ -116,7 +116,7 @@ a:active {
 
 .tony-img {
   border-radius: 50%;
-  border-color: white;
+  border-color: $light-primary;
   border-style: solid;
   border-width: 5px;
   width: 25%;
@@ -218,7 +218,7 @@ a:active {
 
 .card-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   gap: 1rem;
   height: 100%;
@@ -233,6 +233,10 @@ a:active {
   p {
     font-size: 0.8rem;
     line-height: 1.5;
+  }
+
+  a {
+    margin-right: 1rem;
   }
 }
 
