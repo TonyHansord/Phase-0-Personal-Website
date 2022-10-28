@@ -136,8 +136,8 @@ a:active {
   list-style: none;
 }
 
-.tech-skills::before {
-  content: ">";
+.tech-skills::before{
+content: ">";
   padding-right: 10px;
   color: #fff;
 }
@@ -198,7 +198,7 @@ a:active {
   font-weight: 300;
 }
 .card-content h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .card-content p {
   font-size: 0.8rem;
@@ -368,6 +368,11 @@ a:active {
   .row.fem {
     padding: 0 2rem;
   }
+  
+  .card-content h2 {
+  font-size: 5vw;
+  }
+  
   .contact-form,
 .main-form-container {
     display: flex;
