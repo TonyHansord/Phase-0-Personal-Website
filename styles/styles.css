@@ -1,10 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+:root {
+  --light-primary: #9ff7cd;
+  --light-secondary: #a6ffd4;
+  --dark-primary: #333954;
+  --dark-secondary: #4c547c;
+  --dark-accent: #d3d8f1;
+  --colored-gradient: linear-gradient(
+    to bottom right,
+    var(--light-primary),
+    var(--light-secondary)
+  );
+  --dark-gradient: linear-gradient(
+    to bottom right,
+    var(--dark-secondary),
+    var(--dark-primary)
+  );
+  --primary-font: "Ubuntu", sans-serif;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: "Ubuntu", sans-serif;
+  font-family: var(--primary-font);
   text-decoration: none;
 }
 
@@ -13,10 +33,10 @@ nav {
 }
 
 a button {
-  background-color: #333954;
-  font-family: "Ubuntu", sans-serif;
+  background-color: var(--dark-primary);
+  font-family: var(--primary-font);
   font-size: 1rem;
-  color: #a6ffd4;
+  color: var(--light-secondary);
   border-radius: 9px;
   border-style: none;
   padding: 0.5rem;
@@ -31,14 +51,14 @@ a:active {
 }
 
 .colored-section {
-  background-image: linear-gradient(to bottom right, #9ff7cd, #a6ffd4);
-  color: #333954;
+  background-image: var(--colored-gradient);
+  color: var(--dark-primary);
   padding: 1rem 2rem;
 }
 
 .dark-section {
-  background-image: linear-gradient(to bottom right, #4c547c, #333954);
-  color: #a6ffd4;
+  background-image: var(--dark-gradient);
+  color: var(--light-secondary);
   padding: 1rem 2rem;
 }
 
@@ -88,7 +108,7 @@ a:active {
 
 .tony-img {
   border-radius: 50%;
-  border-color: #9ff7cd;
+  border-color: var(--light-primary);
   border-style: solid;
   border-width: 5px;
   width: 25%;
@@ -145,7 +165,7 @@ a:active {
 .about-me {
   padding: 2rem 0;
   font-size: 1rem;
-  font-family: "Ubuntu", sans-serif;
+  font-family: var(--primary-font);
 }
 
 #card-container {
@@ -180,8 +200,8 @@ a:active {
 }
 
 .card {
-  background-color: #333954;
-  color: #d3d8f1;
+  background-color: var(--dark-primary);
+  color: var(--dark-accent);
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -217,7 +237,7 @@ a:active {
 }
 
 .contact-container {
-  border: 0.15rem solid #9ff7cd;
+  border: 0.15rem solid var(--light-primary);
   border-radius: 9px;
   padding: 1rem;
 }
@@ -255,10 +275,10 @@ a:active {
   padding: 1rem;
 }
 .bottom-container .contact-submit-btn {
-  background-color: #333954;
-  font-family: "Ubuntu", sans-serif;
+  background-color: var(--dark-primary);
+  font-family: var(--primary-font);
   font-size: 1rem;
-  color: #a6ffd4;
+  color: var(--light-secondary);
   border-radius: 9px;
   border-style: none;
   padding: 0.5rem;
@@ -271,13 +291,13 @@ a:active {
 }
 
 .form-control {
-  color: #d3d8f1;
+  color: var(--dark-accent);
   border-radius: 5px;
   border-width: 2px;
   border-style: solid;
-  border-color: #9ff7cd;
+  border-color: var(--light-primary);
   padding: 0.5rem;
-  background-color: #333954;
+  background-color: var(--dark-primary);
 }
 
 #message {
@@ -285,7 +305,7 @@ a:active {
 }
 
 @media (max-width: 650px) {
-  [class*=toggle-] {
+  [class*="toggle-"] {
     background: transparent;
     padding: 10px;
     border-radius: 5px;
@@ -297,7 +317,7 @@ a:active {
     width: fit-content;
     display: flex;
   }
-  [class*=toggle-] img {
+  [class*="toggle-"] img {
     width: 1.5rem;
   }
   .toggle-off {
@@ -308,7 +328,7 @@ a:active {
     user-select: none;
   }
   .dropdown-content {
-    background-color: #97fb90;
+    background-color: var(--light-primary);
     width: 33vw;
     display: none;
     z-index: 1;
@@ -359,7 +379,7 @@ a:active {
   .about-container .heading-container .about-me {
     padding: 2rem 0;
     font-size: 1rem;
-    font-family: "Ubuntu", sans-serif;
+    font-family: var(--primary-font);
   }
   #card-container {
     display: flex;
@@ -369,13 +389,13 @@ a:active {
     padding: 0 2rem;
   }
   .contact-form,
-.main-form-container {
+  .main-form-container {
     display: flex;
     flex-direction: column;
   }
 }
 @media (min-width: 650px) {
-  [class*=toggle-] {
+  [class*="toggle-"] {
     display: none;
   }
   .dropdown-content {
@@ -393,5 +413,3 @@ a:active {
     grid-template-columns: 30% 30% 30%;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */
