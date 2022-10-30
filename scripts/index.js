@@ -21,6 +21,12 @@ const projectData = {
       tech: ["Swift", "Xcode", "Cocoapods", "Firebase"],
       link: "https://apps.apple.com/us/app/booklogue/id1521788378?mt=8",
     },
+    {
+      title: "Landing Page for Booklogue",
+      desc: "An iOS app that allows users to track their reading progress and add notes about the books they read.",
+      tech: ["Swift", "Xcode", "Cocoapods", "Firebase"],
+      link: "https://apps.apple.com/us/app/booklogue/id1521788378?mt=8",
+    },
   ],
   otherProjects: [
     {
