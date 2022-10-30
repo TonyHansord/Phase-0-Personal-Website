@@ -177,8 +177,8 @@ button:hover {
   list-style: none;
 }
 
-.tech-skills::before {
-  content: ">";
+.tech-skills::before{
+content: ">";
   padding-right: 10px;
   color: #fff;
 }
@@ -297,7 +297,7 @@ button:hover {
 }
 
 .card-content h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .card-content p {
   font-size: 0.8rem;
@@ -480,7 +480,6 @@ footer {
     margin: 0 auto;
     padding: 0 2rem;
   }
-
   .contact-form,
   .main-form-container {
     display: flex;
