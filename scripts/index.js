@@ -1,5 +1,5 @@
 const displayMenuBtn = document.querySelector(".toggle-on");
-const menuContent = document.querySelector(".dropdown-content");
+const menuContent = document.getElementById("nav-modal");
 const menuClasses = menuContent.classList;
 
 const fProjectTitle = document.querySelectorAll(".fproject-title");
@@ -110,7 +110,7 @@ for (let i = 0; i < projectType.length; i++) {
 }
 
 displayMenuBtn.addEventListener("click", function () {
-  menuClasses.contains("toggle")
-    ? menuClasses.remove("toggle")
-    : menuClasses.add("toggle");
+  menuClasses.contains("hidden")
+    ? menuClasses.remove("hidden")
+    : menuClasses.add("hidden");
 });
