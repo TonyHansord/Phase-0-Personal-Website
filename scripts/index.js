@@ -1,8 +1,9 @@
 const body = document.body;
+const main = document.querySelector("main");
+const menuLinks = document.querySelectorAll(".menu-link");
 const displayMenuBtn = document.querySelector(".toggle");
 const menuContent = document.getElementById("nav-modal");
 const menuClasses = menuContent.classList;
-const isBlurred = document.querySelectorAll(".is-blurred");
 
 const fProjectTitle = document.querySelectorAll(".fproject-title");
 const fProjectDesc = document.querySelectorAll(".fproject-desc");
@@ -113,19 +114,26 @@ for (let i = 0; i < projectType.length; i++) {
 
 function openMenu() {
   menuClasses.remove("hidden");
-  isBlurred.forEach((element) => {
-    element.style.filter = "blur(5px)";
-    body.style.overflow = "hidden";
-  });
+  body.style.overflow = "hidden";
+  main.classList.add("is-blurred");
 }
 
 function closeMenu() {
   menuClasses.add("hidden");
-  isBlurred.forEach((element) => {
-    element.style.filter = "blur(0)";
-    body.style.overflow = "auto";
-  });
+  body.style.overflow = "auto";
+  main.classList.remove("is-blurred");
 }
+
+main.addEventListener("click", function () {
+  if (!menuClasses.contains("hidden")) {
+    closeMenu();
+  }
+});
+
+menuLinks.forEach((element) => {
+  console.log(element);
+  element.addEventListener("click", closeMenu);
+});
 
 displayMenuBtn.addEventListener("click", function () {
   menuClasses.contains("hidden") ? openMenu() : closeMenu();

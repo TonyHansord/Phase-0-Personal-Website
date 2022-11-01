@@ -10,39 +10,39 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <main>
-    <section class="dark-section" id="header-section">
-      
-        <nav>
-          <ul id="nav-list">
-            <div id="logo-container">
-              <a id="logo" href="index.html">
-                <img src="assets/THlogo.svg" />
-                <p>Tony Hansord</p>
+    
+      <nav>
+        <ul id="nav-list">
+          <div id="logo-container">
+            <a id="logo" href="index.html">
+              <img src="assets/THlogo.svg" />
+              <p>Tony Hansord</p>
+            </a>
+          </div>
+          <div class="dropdown">
+            <button class="hamburger toggle">
+              <img src="assets/hamburger.svg" alt="" />
+            </button>
+            <div id="nav-modal" class="dropdown-content hidden">
+              <a class="menu-link" href="#header-section">
+                <li class="menu-item about-item">About</li>
+              </a>
+              <a class="menu-link" href="#work-section">
+                <li class="menu-item skills-item">Work</li>
+              </a>
+              <a class="menu-link" href="#contact-section">
+                <li class="menu-item contact">Contact</li>
+              </a>
+              <a href="assets/Anthony Hansord Resume.pdf">
+                <button class="menu-item resume">Resume</button>
               </a>
             </div>
-            <div class="dropdown ">
-              <button class="hamburger toggle">
-                <img src="assets/hamburger.svg" alt="" />
-              </button>
-              <div id="nav-modal" class="dropdown-content hidden">
-                <a #id="about-link" href="index.html">
-                  <li class="menu-item about-item">About</li>
-                </a>
-                <a href="#work-section">
-                  <li class="menu-item skills-item">Work</li>
-                </a>
-                <a href="#contact-section">
-                  <li class="menu-item contact">Contact</li>
-                </a>
-                <a href="assets/Anthony Hansord Resume.pdf">
-                  <button class="menu-item resume">Resume</button>
-                </a>
-              </div>
-            </div>
-          </ul>
-        </nav>
-        <article id="about" class="is-blurred">
+          </div>
+        </ul>
+      </nav>
+      <main>
+    <section class="dark-section" id="header-section">
+        <article id="about">
           <div class="about-container">
             <img class="tony-img" src="assets/tony-head-bw.jpg" alt="Tony" />
             <div class="heading-container">
@@ -71,7 +71,7 @@
           </div>
         </article>
             </section>
-            <section id="work-section"class="light-section work-section is-blurred">
+            <section id="work-section"class="light-section work-section ">
         <div id="card-container">
           <h3 class="work-type">Featured Works</h3>
           <div class="featured grid">
@@ -202,7 +202,7 @@
           </div>
         </div>
             </section>
-        <section id="contact-section" class="dark-section is-blurred">
+        <section id="contact-section" class="dark-section">
         <footer>
           <div class="contact-container">
             <div class="contact-heading-container">

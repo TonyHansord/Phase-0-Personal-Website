@@ -34,7 +34,6 @@ nav {
   z-index: 1;
   padding: 0 2%;
   width: 100vw;
-  margin: -1rem 0 0 -2rem;
   background-color: var(--light-primary-translucent);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -378,6 +377,10 @@ footer {
 }
 
 @media (max-width: 850px) {
+  nav {
+    padding: 2%;
+  }
+
   .toggle {
     background: transparent;
     padding: 10px;
@@ -392,6 +395,10 @@ footer {
 
   .toggle:hover {
     background-color: transparent;
+  }
+
+  #nav-modal.hidden {
+    margin-right: -50vw;
   }
 
   #nav-modal {
@@ -410,13 +417,15 @@ footer {
     transition: margin-right 0.5s;
   }
 
-  #nav-modal.hidden {
-    margin-right: -50vw;
+  .is-blurred {
+    filter: blur(5px);
+    margin-left: -6px;
   }
 
   #nav-modal li {
     font-size: 1.5rem;
     text-align: center;
+    cursor: pointer;
   }
   .dropdown-content .resume {
     width: 100%;
