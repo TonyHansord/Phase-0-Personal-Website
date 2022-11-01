@@ -37,6 +37,7 @@ nav {
   margin: -1rem 0 0 -2rem;
   background-color: var(--light-primary-translucent);
   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   color: var(--dark-primary);
 }
 
@@ -63,14 +64,14 @@ h3 {
   font-size: 2rem;
 }
 
-.colored-section {
-  background-image: var(--colored-gradient);
-  color: var(--dark-primary);
+.light-section {
+  background-color: var(--dark-secondary);
+  color: var(--light-primary);
   padding: 1rem 2rem;
 }
 
 .dark-section {
-  background-image: var(--dark-gradient);
+  background-color: var(--dark-primary);
   color: var(--light-secondary);
   padding: 1rem 2rem;
 }
@@ -177,8 +178,8 @@ button:hover {
   list-style: none;
 }
 
-.tech-skills::before {
-  content: ">";
+.tech-skills::before{
+content: ">";
   padding-right: 10px;
   color: #fff;
 }
@@ -297,7 +298,7 @@ button:hover {
 }
 
 .card-content h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .card-content p {
   font-size: 0.8rem;
@@ -381,6 +382,27 @@ footer {
   height: 100%;
 }
 
+#nav-modal {
+
+position: absolute;
+display: none;
+flex-direction: column;
+justify-content: space-evenly;
+top: 0;
+right: 0;
+height: 100vh;
+width: 50vw;
+background-color: var(--light-primary);
+z-index: 2;
+
+}
+
+.hidden {
+
+  display:none;
+
+}
+
 @media (max-width: 850px) {
   [class*="toggle-"] {
     background: transparent;
@@ -388,7 +410,7 @@ footer {
     border-radius: 5px;
     position: absolute;
     right: 1rem;
-    z-index: 2;
+    z-index: 3;
     margin-top: 0;
     cursor: pointer;
     width: fit-content;
@@ -436,7 +458,7 @@ footer {
   .about-container {
     flex-direction: column;
     align-items: center;
-    padding: 3rem 1rem;
+    padding: 3rem 0;
   }
   .about-container .tony-img {
     width: 33vw;
@@ -444,7 +466,7 @@ footer {
   }
 
   .about-container .heading-container {
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
   }
   .about-container .heading-container .name {
@@ -478,9 +500,8 @@ footer {
   #article,
   footer {
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
-
   .contact-form,
   .main-form-container {
     display: flex;
@@ -489,6 +510,12 @@ footer {
 
   .card-content .right-container {
     display: none;
+  }
+  
+  .row.featured .card-content > div:first-child {
+  
+  padding: 2rem;
+  
   }
 
   .row.featured .card-content > div {
