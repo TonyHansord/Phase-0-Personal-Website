@@ -21,11 +21,11 @@
                 <p>Tony Hansord</p>
               </a>
             </div>
-            <div class="dropdown">
-              <button class="hamburger toggle-on">
+            <div class="dropdown ">
+              <button class="hamburger toggle">
                 <img src="assets/hamburger.svg" alt="" />
               </button>
-              <div class="dropdown-content">
+              <div id="nav-modal" class="dropdown-content hidden">
                 <a #id="about-link" href="index.html">
                   <li class="menu-item about-item">About</li>
                 </a>
@@ -41,22 +41,8 @@
               </div>
             </div>
           </ul>
-                <div id="nav-modal" class="hidden">
-      <a #id="about-link" href="index.html">
-                  <li class="menu-item about-item">About</li>
-                </a>
-                <a href="#work-section">
-                  <li class="menu-item skills-item">Work</li>
-                </a>
-                <a href="#contact-section">
-                  <li class="menu-item contact">Contact</li>
-                </a>
-                <a href="assets/Anthony Hansord Resume.pdf">
-                  <button class="menu-item resume">Resume</button>
-                </a>
-      </div>
         </nav>
-        <article id="about">
+        <article id="about" class="is-blurred">
           <div class="about-container">
             <img class="tony-img" src="assets/tony-head-bw.jpg" alt="Tony" />
             <div class="heading-container">
@@ -85,7 +71,7 @@
           </div>
         </article>
             </section>
-            <section id="work-section"class="light-section work-section">
+            <section id="work-section"class="light-section work-section is-blurred">
         <div id="card-container">
           <h3 class="work-type">Featured Works</h3>
           <div class="featured grid">
@@ -216,7 +202,7 @@
           </div>
         </div>
             </section>
-        <section id="contact-section" class="dark-section ">
+        <section id="contact-section" class="dark-section is-blurred">
         <footer>
           <div class="contact-container">
             <div class="contact-heading-container">

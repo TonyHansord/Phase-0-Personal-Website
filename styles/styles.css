@@ -156,10 +156,6 @@ h3 {
   text-align: left;
 }
 
-.dropdown-content #about-link {
-  margin-top: 4rem;
-}
-
 .name {
   font-size: 4rem;
 }
@@ -381,72 +377,50 @@ footer {
   height: 100%;
 }
 
-#nav-modal {
-  position: absolute;
-  display: none;
-  flex-direction: column;
-  justify-content: space-evenly;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 50vw;
-  background-color: var(--light-primary);
-  z-index: 2;
-}
-
-.hidden {
-  display: none;
-}
-
 @media (max-width: 850px) {
-  [class*="toggle-"] {
+  .toggle {
     background: transparent;
     padding: 10px;
-    border-radius: 5px;
     position: absolute;
-    right: 1rem;
+    right: 2rem;
     z-index: 3;
-    margin-top: 0;
     cursor: pointer;
     width: fit-content;
     display: flex;
+    border: none;
   }
-  [class*="toggle-"] img {
-    width: 1.5rem;
+
+  .toggle:hover {
+    background-color: transparent;
   }
-  .toggle-off {
-    margin-top: 1rem;
-  }
-  .dropdown {
-    display: inline-block;
-    user-select: none;
-  }
-  .dropdown-content {
-    /* background-color: var(--light-primary);
-    width: 33vw; */
-    display: none;
-    /* z-index: 1;
+
+  #nav-modal {
     position: absolute;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     top: 0;
-    right: 0; */
+    right: 0;
+    margin-right: 0;
+    padding: 3rem 2rem;
+    height: 100vh;
+    width: 50vw;
+    background-color: var(--light-primary);
+    z-index: 2;
+    transition: margin-right 0.5s;
   }
-  /* .dropdown-content a {
-    padding: 1rem;
-    text-align: right;
+
+  #nav-modal.hidden {
+    margin-right: -50vw;
+  }
+
+  #nav-modal li {
+    font-size: 1.5rem;
+    text-align: center;
   }
   .dropdown-content .resume {
     width: 100%;
   }
-  .dropdown-content #about-link {
-    margin-top: 4rem;
-  }
-  .dropdown:active {
-    background-color: #b5f9b0; */
-  /* .toggle {
-    display: flex;
-    flex-direction: column;
-  } */
   #about {
     justify-content: center;
   }
@@ -524,7 +498,7 @@ footer {
   }
 }
 @media (min-width: 850px) {
-  [class*="toggle-"] {
+  .toggle {
     display: none;
   }
 

@@ -1,6 +1,8 @@
-const displayMenuBtn = document.querySelector(".toggle-on");
+const body = document.body;
+const displayMenuBtn = document.querySelector(".toggle");
 const menuContent = document.getElementById("nav-modal");
 const menuClasses = menuContent.classList;
+const isBlurred = document.querySelectorAll(".is-blurred");
 
 const fProjectTitle = document.querySelectorAll(".fproject-title");
 const fProjectDesc = document.querySelectorAll(".fproject-desc");
@@ -109,8 +111,22 @@ for (let i = 0; i < projectType.length; i++) {
   }
 }
 
+function openMenu() {
+  menuClasses.remove("hidden");
+  isBlurred.forEach((element) => {
+    element.style.filter = "blur(5px)";
+    body.style.overflow = "hidden";
+  });
+}
+
+function closeMenu() {
+  menuClasses.add("hidden");
+  isBlurred.forEach((element) => {
+    element.style.filter = "blur(0)";
+    body.style.overflow = "auto";
+  });
+}
+
 displayMenuBtn.addEventListener("click", function () {
-  menuClasses.contains("hidden")
-    ? menuClasses.remove("hidden")
-    : menuClasses.add("hidden");
+  menuClasses.contains("hidden") ? openMenu() : closeMenu();
 });
