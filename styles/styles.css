@@ -318,6 +318,21 @@ footer {
   padding: 0 4rem;
 }
 
+footer h2,
+footer p {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+footer h2 {
+  font-size: 2rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
 .contact-container {
   border: 0.15rem solid var(--light-secondary);
   border-radius: 9px;
@@ -376,6 +391,28 @@ footer {
   height: 100%;
 }
 
+.social-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 0 0 0;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.socials i {
+  font-size: 2rem;
+}
+
+.socials i:hover {
+  color: var(--dark-accent);
+}
+
 @media (max-width: 850px) {
   nav {
     padding: 2%;
@@ -414,6 +451,9 @@ footer {
     width: 50vw;
     background-color: var(--light-primary);
     z-index: 2;
+  }
+
+  #nav-modal.transition {
     transition: margin-right 0.5s;
   }
 

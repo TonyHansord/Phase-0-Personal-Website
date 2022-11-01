@@ -79,13 +79,13 @@ const projectData = {
       liveSite: "https://nft-element-tonyhansord.vercel.app",
     },
     {
-      title: "NFT preview card component",
-      type: "Frontend Mentor Challenge",
+      title: "Wedding Website",
+      type: "Other",
       description:
-        "This HTML & CSS only challenge is perfect for anyone just starting out or anyone wanting a small project to play around with.",
-      tech: ["HTML", "CSS"],
-      repo: "https://github.com/TonyHansord/FM-Challenges/tree/master/NFT-element",
-      liveSite: "https://nft-element-tonyhansord.vercel.app",
+        "A website I built with GoDaddy Website builder, for my wife and I's wedding.",
+      tech: ["GoDaddy"],
+      repo: "",
+      liveSite: "https://www.katntony.com",
     },
   ],
 };
@@ -136,5 +136,14 @@ menuLinks.forEach((element) => {
 });
 
 displayMenuBtn.addEventListener("click", function () {
+  if (!menuClasses.contains("transition")) {
+    menuClasses.add("transition");
+  }
   menuClasses.contains("hidden") ? openMenu() : closeMenu();
+});
+
+window.addEventListener("resize", function () {
+  if (menuClasses.contains("transition")) {
+    menuClasses.remove("transition");
+  }
 });
