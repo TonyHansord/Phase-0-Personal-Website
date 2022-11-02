@@ -113,15 +113,17 @@ for (let i = 0; i < projectType.length; i++) {
 }
 
 function openMenu() {
+  displayMenuBtn.classList.add("open");
   menuClasses.remove("hidden");
   body.style.overflow = "hidden";
-  main.classList.add("is-blurred");
+  // main.classList.add("is-blurred");
 }
 
 function closeMenu() {
+  displayMenuBtn.classList.remove("open");
   menuClasses.add("hidden");
   body.style.overflow = "auto";
-  main.classList.remove("is-blurred");
+  // main.classList.remove("is-blurred");
 }
 
 main.addEventListener("click", function () {
