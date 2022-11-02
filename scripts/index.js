@@ -26,7 +26,7 @@ const projectData = {
     },
     {
       title: "Landing Page for Booklogue",
-      desc: "An iOS app that allows users to track their reading progress and add notes about the books they read.",
+      desc: "Website for the aforementioned Booklogue App, using Bootstrap and 3rd party form handler",
       tech: ["HTML", "CSS", "Bootstrap"],
       repo: "https://github.com/TonyHansord/BookLogueWeb",
       link: "https://www.booklogue.com",
@@ -61,13 +61,13 @@ const projectData = {
       liveSite: "https://nft-element-tonyhansord.vercel.app",
     },
     {
-      title: "NFT preview card component",
+      title: "Time tracking dashboard",
       type: "Frontend Mentor Challenge",
       description:
-        "This HTML & CSS only challenge is perfect for anyone just starting out or anyone wanting a small project to play around with.",
-      tech: ["HTML", "CSS"],
-      repo: "https://github.com/TonyHansord/FM-Challenges/tree/master/NFT-element",
-      liveSite: "https://nft-element-tonyhansord.vercel.app",
+        "This challenge was to recreate a dashboard for a time-tracking app, using JS.",
+      tech: ["HTML", "CSS", "Javascript"],
+      repo: "https://github.com/TonyHansord/FM-Challenges/tree/time-tracker/time-tracking-dashboard",
+      liveSite: "https://tonyhansord-time-tracker.netlify.app",
     },
     {
       title: "NFT preview card component",

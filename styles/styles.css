@@ -70,7 +70,7 @@ h3 {
 .light-section {
   background-color: var(--dark-secondary);
   color: var(--light-primary);
-  padding: 1rem 2rem;
+  padding: 3rem 2rem;
   border-top: 2px solid var(--light-secondary);
   border-bottom: 2px solid var(--light-secondary);
 }
@@ -78,7 +78,7 @@ h3 {
 .dark-section {
   background-color: var(--dark-primary);
   color: var(--light-secondary);
-  padding: 1rem 2rem;
+  padding: 4rem 2rem;
 }
 
 #nav-list {
@@ -315,7 +315,7 @@ h3 {
 footer {
   width: 80vw;
   margin: 0 auto;
-  padding: 0 4rem;
+  padding: 4rem;
 }
 
 footer h2,
