@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 
 :root {
-  --light-primary: rgb(159, 247, 205);
+  --light-primary: #9ff7cd;
   --light-primary-translucent: rgba(159, 247, 205, 0.808);
   --light-secondary: #a6ffd4;
   --dark-primary: rgb(51, 57, 84);
@@ -113,7 +113,7 @@ h3 {
   width: 100%;
 }
 #nav-list #logo {
-  width: fit-content;
+  width: 1rem;
   display: flex;
   align-items: center;
   gap: 1.5rem;
@@ -122,8 +122,10 @@ h3 {
   width: 100%;
   font-size: 1.5rem;
 }
-#nav-list #logo svg {
-  width: 5rem;
+#nav-list #logo img {
+  width: 3rem;
+  border-radius: 9px;
+  border: #23db99 solid 1px;
 }
 #nav-list .dropdown {
   display: flex;
