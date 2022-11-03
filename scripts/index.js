@@ -19,7 +19,7 @@ const projectLink = document.querySelectorAll(".live-site");
 const projectData = {
   featuredProjects: [
     {
-      title: "Booklogue",
+      title: "BookLogue: Reading Manager",
       desc: "An iOS app that allows users to track their reading progress and add notes about the books they read.",
       tech: ["Swift", "Xcode", "Cocoapods", "Firebase"],
       link: "https://apps.apple.com/us/app/booklogue/id1521788378?mt=8",
@@ -46,17 +46,17 @@ const projectData = {
       title: "Product preview card component",
       type: "Frontend Mentor Challenge",
       description:
-        "Another challenge involving creating a card component, this a product preview",
+        "Another challenge involving creating a card component, this one a product preview card.",
       tech: ["HTML", "CSS"],
-      repo: "https://github.com/TonyHansord/FM-Challenges/tree/master/NFT-element",
-      liveSite: "https://nft-element-tonyhansord.vercel.app",
+      repo: "https://github.com/TonyHansord/FrontEndMentorChallenges/tree/master/product-preview-card-component",
+      liveSite: "https://product-preview-card-tonyhansord.vercel.app/",
     },
     {
       title: "4 Card Feature Section",
       type: "Frontend Mentor Challenge",
       description:
-        "This HTML & CSS only challenge is perfect for anyone just starting out or anyone wanting a small project to play around with.",
-      tech: ["HTML", "CSS"],
+        "This challenge was to recreate a four card section, and to practice responsive layouts.",
+      tech: ["HTML", "CSS", "Figma"],
       repo: "https://github.com/TonyHansord/FM-Challenges/tree/master/four-card-feature-section",
       liveSite: "https://four-card-section-tonyhansord.vercel.app",
     },
@@ -64,7 +64,7 @@ const projectData = {
       title: "Time tracking dashboard",
       type: "Frontend Mentor Challenge",
       description:
-        "This challenge was to recreate a dashboard for a time-tracking app, using JS.",
+        "This challenge was to recreate a dashboard for a time-tracking app.",
       tech: ["HTML", "CSS", "Javascript"],
       repo: "https://github.com/TonyHansord/FM-Challenges/tree/time-tracker/time-tracking-dashboard",
       liveSite: "https://tonyhansord-time-tracker.netlify.app",
@@ -73,7 +73,7 @@ const projectData = {
       title: "Skilled e-learning landing page",
       type: "Frontend Mentor Challenge",
       description:
-        "This HTML & CSS only challenge is perfect for anyone just starting out or anyone wanting a small project to play around with.",
+        "This challenge was to recreate a landing page, with a focus on making it responsive.",
       tech: ["HTML", "CSS", "Sass"],
       repo: "https://github.com/TonyHansord/FrontEndMentorChallenges/tree/master/skilled-elearning-landing-page",
       liveSite: "https://tonyhansord-elearning-landing-page.netlify.app",
@@ -116,14 +116,14 @@ function openMenu() {
   displayMenuBtn.classList.add("open");
   menuClasses.remove("hidden");
   body.style.overflow = "hidden";
-  // main.classList.add("is-blurred");
+  main.classList.add("is-blurred");
 }
 
 function closeMenu() {
   displayMenuBtn.classList.remove("open");
   menuClasses.add("hidden");
   body.style.overflow = "auto";
-  // main.classList.remove("is-blurred");
+  main.classList.remove("is-blurred");
 }
 
 main.addEventListener("click", function () {
