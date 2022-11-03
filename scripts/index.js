@@ -46,19 +46,19 @@ const projectData = {
       title: "Product preview card component",
       type: "Frontend Mentor Challenge",
       description:
-        "This HTML & CSS only challenge is perfect for anyone just starting out or anyone wanting a small project to play around with.",
+        "Another challenge involving creating a card component, this a product preview",
       tech: ["HTML", "CSS"],
       repo: "https://github.com/TonyHansord/FM-Challenges/tree/master/NFT-element",
       liveSite: "https://nft-element-tonyhansord.vercel.app",
     },
     {
-      title: "NFT preview card component",
+      title: "4 Card Feature Section",
       type: "Frontend Mentor Challenge",
       description:
         "This HTML & CSS only challenge is perfect for anyone just starting out or anyone wanting a small project to play around with.",
       tech: ["HTML", "CSS"],
-      repo: "https://github.com/TonyHansord/FM-Challenges/tree/master/NFT-element",
-      liveSite: "https://nft-element-tonyhansord.vercel.app",
+      repo: "https://github.com/TonyHansord/FM-Challenges/tree/master/four-card-feature-section",
+      liveSite: "https://four-card-section-tonyhansord.vercel.app",
     },
     {
       title: "Time tracking dashboard",
@@ -70,13 +70,13 @@ const projectData = {
       liveSite: "https://tonyhansord-time-tracker.netlify.app",
     },
     {
-      title: "NFT preview card component",
+      title: "Skilled e-learning landing page",
       type: "Frontend Mentor Challenge",
       description:
         "This HTML & CSS only challenge is perfect for anyone just starting out or anyone wanting a small project to play around with.",
-      tech: ["HTML", "CSS"],
-      repo: "https://github.com/TonyHansord/FM-Challenges/tree/master/NFT-element",
-      liveSite: "https://nft-element-tonyhansord.vercel.app",
+      tech: ["HTML", "CSS", "Sass"],
+      repo: "https://github.com/TonyHansord/FrontEndMentorChallenges/tree/master/skilled-elearning-landing-page",
+      liveSite: "https://tonyhansord-elearning-landing-page.netlify.app",
     },
     {
       title: "Wedding Website",
