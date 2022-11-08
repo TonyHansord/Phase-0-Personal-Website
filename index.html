@@ -1,51 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tony Hansord Developer</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://kit.fontawesome.com/7a48385b9d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles/styles.css" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script
+      src="https://kit.fontawesome.com/7a48385b9d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    
-      <nav>
-        <ul id="nav-list">
-          <div id="logo-container">
-            <a id="logo" href="index.html">
-              <img src="assets/THlogo.svg" />
-              <p>Tony Hansord</p>
+    <nav>
+      <div id="nav-list">
+        <div id="logo-container">
+          <a id="logo" href="index.html">
+            <img src="assets/THlogo.svg" alt="Logo">
+            <p>Tony Hansord</p>
+          </a>
+        </div>
+        <div class="dropdown">
+          <div class="hamburger toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div id="nav-modal" class="dropdown-content hidden transition">
+            <a class="menu-link" href="#header-section">
+              <p class="menu-item about-item">About</p>
             </a>
+            <a class="menu-link" href="#work-section">
+              <p class="menu-item skills-item">Work</p>
+            </a>
+            <a class="menu-link" href="#contact-section">
+              <p class="menu-item contact">Contact</p>
+            </a>
+            <button
+              class="menu-item blog"
+              onclick="location.href='https://medium.com/@tonychansord';"
+            >
+              Blog
+            </button>
           </div>
-          <div class="dropdown">
-            <div class="hamburger toggle">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div id="nav-modal" class="dropdown-content hidden transition">
-              <a class="menu-link" href="#header-section">
-                <li class="menu-item about-item">About</li>
-              </a>
-              <a class="menu-link" href="#work-section">
-                <li class="menu-item skills-item">Work</li>
-              </a>
-              <a class="menu-link" href="#contact-section">
-                <li class="menu-item contact">Contact</li>
-              </a>
-              <a href="https://medium.com/@tonychansord">
-                <button class="menu-item blog">Blog</button>
-              </a>
-            </div>
-          </div>
-        </ul>
-      </nav>
-      <main>
-    <section class="dark-section" id="header-section">
-        <article id="about">
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="dark-section" id="header-section">
+        <div id="about">
           <div class="about-container">
             <img class="tony-img" src="assets/tony-head-bw.jpg" alt="Tony" />
             <div class="heading-container">
@@ -73,179 +78,221 @@
               </div>
             </div>
           </div>
-        </article>
-            </section>
-            <section id="work-section"class="light-section work-section ">
+        </div>
+      </section>
+      <section id="work-section" class="light-section work-section">
         <div id="card-container">
           <h3 class="work-type">Featured Works</h3>
           <div class="featured grid">
             <div class="card">
-        
               <div class="card-content">
-
                 <div class="left-container">
-                  <h2 class="fproject-title"></h2>
-                    <p class="fproject-desc"></p>
-                    <ul class="fptech-list"></ul>
-                    <span><a class="flive-site" href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></span>
+                  <h2 class="fproject-title">Booklogue</h2>
+                  <p class="fproject-desc"></p>
+                  <ul class="fptech-list"></ul>
+                  <span
+                    ><a class="flive-site" href="#"
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i></a
+                  ></span>
                 </div>
                 <div class="right-container">
-                  <img src="assets/Tracker_Goal.png" alt="">
+                  <img
+                    src="assets/Tracker_Goal.png"
+                    alt="Booklogue App Preview"
+                  />
                 </div>
-
               </div>
-        
             </div>
             <div class="card">
-        
               <div class="card-content">
-
                 <div class="left-container">
-                
-                  <h2 class="fproject-title"></h2>
-                    <p class="fproject-desc"></p>
-                    <ul class="fptech-list"></ul>
-                    <p>
-                      <span><a class="flive-site" href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></span>
-                      <span><a class="frepo" href="https://github.com/TonyHansord/BookLogueWeb"><i class="fa-brands fa-github"></i></a></span>
-                    </p>
-
+                  <h2 class="fproject-title">Booklogue Web</h2>
+                  <p class="fproject-desc"></p>
+                  <ul class="fptech-list"></ul>
+                  <p>
+                    <span
+                      ><a class="flive-site" href="#"
+                        ><i
+                          class="fa-solid fa-arrow-up-right-from-square"
+                        ></i></a
+                    ></span>
+                    <span
+                      ><a
+                        class="frepo"
+                        href="https://github.com/TonyHansord/BookLogueWeb"
+                        ><i class="fa-brands fa-github"></i></a
+                    ></span>
+                  </p>
                 </div>
-                  <div class="right-container">
-                    <img src="assets/Booklogue-web.png" alt="">
-                  </div>
+                <div class="right-container">
+                  <img src="assets/Booklogue-web.png" alt="Booklogue Website" />
+                </div>
               </div>
-             
-        
             </div>
           </div>
           <h3 class="work-type">Other Projects</h3>
-          <p class="type-desc">Other smaller projects. Most are challenges from <a href="https://frontendmentor.io">FrontendMentor.io, which involve recreating a webpage or element from a design brief or Figma project. </a></p>
+          <p class="type-desc">
+            Other smaller projects. Most are challenges from
+            <a href="https://frontendmentor.io"
+              >FrontendMentor.io, which involve recreating a webpage or element
+              from a design brief or Figma project.
+            </a>
+          </p>
           <div class="other grid">
             <div class="card">
-        
               <div class="card-content">
                 <p class="project-type"></p>
-                <h2 class="project-title"></h2>
-                  <p class="project-desc"></p>
-                  <ul class="tech-list"></ul>
-                  
-                  <p><span><a class="live-site" href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></span>
-                  <span><a class="repo" href="#"><i class="fa-brands fa-github"></i></a></span>
-                </p>
-              </div>
-              
-            </div>
-            <div class="card">
-              
-              <div class="card-content">
-                <p class="project-type"></p>
-                <h2 class="project-title"></h2>
+                <h2 class="project-title">#</h2>
                 <p class="project-desc"></p>
                 <ul class="tech-list"></ul>
-                <p><span><a class="live-site" href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></span>
-                  <span><a class="repo" href="#"><i class="fa-brands fa-github"></i></a></span>
+
+                <p>
+                  <span
+                    ><a class="live-site" href="#"
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i></a
+                  ></span>
+                  <span
+                    ><a class="repo" href="#"
+                      ><i class="fa-brands fa-github"></i></a
+                  ></span>
                 </p>
               </div>
-              
             </div>
             <div class="card">
-              
               <div class="card-content">
                 <p class="project-type"></p>
-                <h2 class="project-title"></h2>
+                <h2 class="project-title">#</h2>
                 <p class="project-desc"></p>
                 <ul class="tech-list"></ul>
-               <p><span><a class="live-site" href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></span>
-                  <span><a class="repo" href="#"><i class="fa-brands fa-github"></i></a></span>
+                <p>
+                  <span
+                    ><a class="live-site" href="#"
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i></a
+                  ></span>
+                  <span
+                    ><a class="repo" href="#"
+                      ><i class="fa-brands fa-github"></i></a
+                  ></span>
                 </p>
               </div>
-              
             </div>
             <div class="card">
-              
               <div class="card-content">
                 <p class="project-type"></p>
-                <h2 class="project-title"></h2>
+                <h2 class="project-title">#</h2>
                 <p class="project-desc"></p>
                 <ul class="tech-list"></ul>
-              <p><span><a class="live-site" href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></span>
-                  <span><a class="repo" href="#"><i class="fa-brands fa-github"></i></a></span>
+                <p>
+                  <span>
+                    <a class="live-site" href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></span>
+                  <span>
+                    <a class="repo" href="#"><i class="fa-brands fa-github"></i></a>
+                  </span>
                 </p>
               </div>
-              
             </div>
             <div class="card">
-              
               <div class="card-content">
                 <p class="project-type"></p>
-                <h2 class="project-title"></h2>
+                <h2 class="project-title">#</h2>
                 <p class="project-desc"></p>
                 <ul class="tech-list"></ul>
-               <p><span><a class="live-site" href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></span>
-                  <span><a class="repo" href="#"><i class="fa-brands fa-github"></i></a></span>
+                <p>
+                  <span
+                    ><a class="live-site" href="#"
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i></a
+                  ></span>
+                  <span
+                    ><a class="repo" href="#"
+                      ><i class="fa-brands fa-github"></i></a
+                  ></span>
                 </p>
               </div>
-              
             </div>
             <div class="card">
-              
               <div class="card-content">
                 <p class="project-type"></p>
-                <h2 class="project-title"></h2>
+                <h2 class="project-title">#</h2>
                 <p class="project-desc"></p>
                 <ul class="tech-list"></ul>
-               <p><span><a class="live-site" href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></span>
+                <p>
+                  <span
+                    ><a class="live-site" href="#"
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i></a
+                  ></span>
+                  <span
+                    ><a class="repo" href="#"
+                      ><i class="fa-brands fa-github"></i></a
+                  ></span>
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <p class="project-type"></p>
+                <h2 class="project-title">#</h2>
+                <p class="project-desc"></p>
+                <ul class="tech-list"></ul>
+                <p>
+                  <span
+                    ><a class="live-site" href="#"
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i></a
+                  ></span>
                   <span><a class="repo" href="#"></a></span>
                 </p>
-                </div>
-                
               </div>
-     
+            </div>
           </div>
         </div>
-            </section>
-        <section id="contact-section" class="dark-section">
+      </section>
+      <section id="contact-section" class="dark-section">
         <footer>
           <div class="contact-container">
             <div class="contact-heading-container">
               <h2 class="section-heading">Want to get in touch?</h2>
             </div>
             <div class="contact-form-container">
-              <form class="contact-form id="contactForm" action="">
+              <form class="contact-form" id="contactForm" action="#">
                 <div class="main-form-container">
                   <div class="left-container">
                     <div class="form-group">
                       <label class="form-label" for="name">Name</label>
                       <input
-                      type="name"
-                      name="name"
-                      class="form-control"
-                      id="name"
-                      placeholder="Enter your name"
-                      required
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        id="name"
+                        placeholder="Enter your name"
+                        required
                       />
                     </div>
                     <div class="form-group">
                       <label class="form-label" for="name">Email</label>
                       <input
-                      type="email"
-                      name="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="Enter your email"
-                      required
+                        type="email"
+                        name="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
                       />
                     </div>
                   </div>
                   <div class="right-container">
                     <div class="form-group">
                       <label class="form-label" for="message">Email</label>
-                      <textarea class="form-control" id="message" name="message" grids="5" placeholder="Enter your message" required></textarea>
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Enter your message"
+                        required
+                      ></textarea>
                     </div>
                   </div>
                 </div>
-        
+
                 <div class="bottom-container">
                   <button class="contact-submit-btn">Submit</button>
                 </div>
@@ -255,19 +302,25 @@
           <div class="social-container">
             <h2>Or follow me!</h2>
             <div class="socials">
-              <a href="https://github.com/TonyHansord"><i class="fa-brands fa-github" title="GitHub"></i></a>
-              <a href="https://linkedin.com/in/tony-hansord-83418a245"><i class="fa-brands fa-linkedin-in" title="LinkedIn"></i></a>
-              <a href="https://medium.com/@tonychansord" title="Medium"><i class="fa-brands fab fa-medium"></i></a>
-              <a href="mailto:tonyhansorddev@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+              <a href="https://github.com/TonyHansord"
+                ><i class="fa-brands fa-github" title="GitHub"></i
+              ></a>
+              <a href="https://linkedin.com/in/tony-hansord-83418a245"
+                ><i class="fa-brands fa-linkedin-in" title="LinkedIn"></i
+              ></a>
+              <a href="https://medium.com/@tonychansord" title="Medium"
+                ><i class="fa-brands fab fa-medium"></i
+              ></a>
+              <a href="mailto:tonyhansorddev@gmail.com" title="Email"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
             </div>
           </div>
           <p>Designed and developed by Tony Hansord</p>
         </footer>
-        </section>
-      </main>
-      
+      </section>
+    </main>
 
-      
     <script src="scripts/index.js"></script>
   </body>
 </html>
