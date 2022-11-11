@@ -26,7 +26,7 @@ const projectData = {
     },
     {
       title: "Landing Page for Booklogue",
-      desc: "Website for the aforementioned Booklogue App, using Bootstrap and 3rd party form handler",
+      desc: "Website for the aforementioned Booklogue App, using Bootstrap and a 3rd party form handler.",
       tech: ["HTML", "CSS", "Bootstrap"],
       repo: "https://github.com/TonyHansord/BookLogueWeb",
       link: "https://www.booklogue.com",
