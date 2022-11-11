@@ -49,7 +49,14 @@ nav {
   color: var(--dark-primary);
 }
 
-button {
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
+div .btn {
   background-color: var(--dark-primary);
   font-family: var(--primary-font);
   font-size: 1rem;
@@ -57,19 +64,13 @@ button {
   border-radius: var(--border-radius);
   border-style: solid;
   border-color: var(--light-primary);
-  padding: 0.5rem;
+  padding: 0.5rem 2rem;
   cursor: pointer;
+  width: 100%;
 }
 
-button:hover {
+div .btn:hover {
   background-color: var(--dark-secondary);
-}
-
-a,
-a:visited,
-a:hover,
-a:active {
-  color: inherit;
 }
 
 h3 {
@@ -92,6 +93,7 @@ h3 {
 
 #nav-list {
   display: flex;
+  padding: 1rem 0;
 }
 #nav-list a:hover {
   color: #ffffff;
@@ -121,8 +123,9 @@ h3 {
 #nav-list .dropdown-content a {
   padding: 1rem;
 }
-#nav-list .dropdown-content a:last-child:hover {
-  background-color: transparent;
+#nav-list .dropdown-content a:last-child {
+  padding: 1rem 2rem;
+  text-align: center;
 }
 
 #about {
