@@ -64,7 +64,6 @@ div .btn {
   border-radius: var(--border-radius);
   border-style: solid;
   border-color: var(--light-primary);
-  padding: 0.5rem 2rem;
   cursor: pointer;
   width: 100%;
 }
@@ -93,7 +92,6 @@ h3 {
 
 #nav-list {
   display: flex;
-  padding: 1rem 0;
 }
 #nav-list a:hover {
   color: #ffffff;
@@ -124,7 +122,7 @@ h3 {
   padding: 1rem;
 }
 #nav-list .dropdown-content a:last-child {
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   text-align: center;
 }
 
@@ -643,7 +641,7 @@ footer p {
     justify-content: end;
     align-items: center;
   }
-  .dropdown-content .blog {
+  .dropdown-content .btn {
     padding: 0.5rem 2rem;
   }
 }
