@@ -169,6 +169,7 @@ h3 {
   padding: 2rem 0;
   font-size: 1rem;
   font-family: var(--primary-font);
+  color: var(--dark-accent);
 }
 
 #skills-wrapper {
@@ -185,12 +186,13 @@ h3 {
 
 .skills-list {
   list-style: none;
+  color: var(--dark-accent);
 }
 
 .tech-skills::before {
   content: ">";
   padding-right: 10px;
-  color: #fff;
+  color: var(--light-primary);
 }
 
 #card-container {
