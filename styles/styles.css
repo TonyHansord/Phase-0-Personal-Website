@@ -11,6 +11,8 @@
   --border-radius: 9px;
 }
 
+/* properties to create custom scrollbar */
+
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -28,6 +30,8 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--dark-secondary);
 }
+
+/* Universal styles */
 
 * {
   box-sizing: border-box;
@@ -90,6 +94,8 @@ h3 {
   padding: 4rem 2rem;
 }
 
+/* navbar styles */
+
 #nav-list {
   display: flex;
 }
@@ -125,6 +131,8 @@ h3 {
   padding: 0.5rem 2rem;
   text-align: center;
 }
+
+/*about section */
 
 #about {
   width: 80vw;
@@ -194,6 +202,8 @@ h3 {
   padding-right: 10px;
   color: var(--light-primary);
 }
+
+/* Work Section */
 
 #card-container {
   display: flex;
@@ -433,11 +443,13 @@ footer p {
   color: var(--dark-accent);
 }
 
+/* smaller screens */
 @media (max-width: 850px) {
   nav {
     padding: 2%;
   }
 
+  /* Selectors for style and animation of menu button */
   .toggle {
     background: transparent;
     position: relative;
@@ -511,7 +523,7 @@ footer p {
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
-
+  /* styles to allow nav menu to show and hide */
   #nav-modal.hidden {
     margin-right: -50vw;
   }
@@ -620,6 +632,8 @@ footer p {
     justify-content: start;
   }
 }
+
+/* medium screens an up */
 @media (min-width: 850px) {
   .toggle {
     display: none;

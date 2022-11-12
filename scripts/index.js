@@ -16,6 +16,7 @@ const techList = document.querySelectorAll(".tech-list");
 const projectRepo = document.querySelectorAll(".repo");
 const projectLink = document.querySelectorAll(".live-site");
 
+// Data for card objects, will put in a json file further down the track
 const projectData = {
   featuredProjects: [
     {
@@ -144,6 +145,7 @@ displayMenuBtn.addEventListener("click", function () {
   menuClasses.contains("hidden") ? openMenu() : closeMenu();
 });
 
+// prevents menu from showing up on viewport resize
 window.addEventListener("resize", function () {
   if (menuClasses.contains("transition")) {
     menuClasses.remove("transition");
