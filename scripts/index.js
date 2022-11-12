@@ -8,6 +8,7 @@ const menuClasses = menuContent.classList;
 const fProjectTitle = document.querySelectorAll(".fproject-title");
 const fProjectDesc = document.querySelectorAll(".fproject-desc");
 const fpTechList = document.querySelectorAll(".fptech-list");
+const fRepo = document.querySelectorAll(".frepo");
 const fProjectLink = document.querySelectorAll(".flive-site");
 const projectType = document.querySelectorAll(".project-type");
 const projectTitle = document.querySelectorAll(".project-title");
@@ -23,6 +24,7 @@ const projectData = {
       title: "BookLogue: Reading Manager",
       desc: "An iOS app that allows users to track their reading progress and add notes about the books they read.",
       tech: ["Swift", "Xcode", "Cocoapods", "Firebase"],
+      repo: "https://github.com/TonyHansord/BookLogue",
       link: "https://apps.apple.com/us/app/booklogue/id1521788378?mt=8",
     },
     {
@@ -95,6 +97,7 @@ projectData.featuredProjects.forEach((project, index) => {
   fProjectTitle[index].textContent = project.title;
   fProjectDesc[index].textContent = project.desc;
   fProjectLink[index].href = project.link;
+  fRepo[index].href = project.repo;
   for (let j = 0; j < projectData.featuredProjects[index].tech.length; j++) {
     fpTechList[
       index
