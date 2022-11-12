@@ -24,7 +24,6 @@ const projectData = {
       title: "BookLogue: Reading Manager",
       desc: "An iOS app that allows users to track their reading progress and add notes about the books they read.",
       tech: ["Swift", "Xcode", "Cocoapods", "Firebase"],
-      repo: "https://github.com/TonyHansord/BookLogue",
       link: "https://apps.apple.com/us/app/booklogue/id1521788378?mt=8",
     },
     {
@@ -93,11 +92,12 @@ const projectData = {
   ],
 };
 
+fRepo[0].href = projectData.featuredProjects[1].repo;
+
 projectData.featuredProjects.forEach((project, index) => {
   fProjectTitle[index].textContent = project.title;
   fProjectDesc[index].textContent = project.desc;
   fProjectLink[index].href = project.link;
-  fRepo[index].href = project.repo;
   for (let j = 0; j < projectData.featuredProjects[index].tech.length; j++) {
     fpTechList[
       index
