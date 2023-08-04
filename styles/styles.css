@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
 :root {
   --light-primary: #9ff7cd;
@@ -7,7 +7,7 @@
   --dark-primary: rgb(51, 57, 84);
   --dark-secondary: #4c547c;
   --dark-accent: #d3d8f1;
-  --primary-font: "Ubuntu", sans-serif;
+  --primary-font: 'Ubuntu', sans-serif;
   --border-radius: 9px;
 }
 
@@ -198,7 +198,7 @@ h3 {
 }
 
 .tech-skills::before {
-  content: ">";
+  content: '>';
   padding-right: 10px;
   color: var(--light-primary);
 }
@@ -262,13 +262,13 @@ h3 {
   width: 100%;
 }
 
-.grid.featured .card:last-child .card-content {
+.grid.featured .card:nth-child(even) .card-content {
   display: flex;
   flex-direction: row-reverse;
   text-align: end;
 }
 
-.grid.featured .card:last-child .card-content ul {
+.grid.featured .card:nth-child(even) .card-content ul {
   justify-content: end;
 }
 
@@ -624,11 +624,11 @@ footer p {
     width: auto;
   }
 
-  .grid.featured .card:last-child .card-content {
+  .grid.featured .card:nth-child(even) .card-content {
     text-align: left;
   }
 
-  .grid.featured .card:last-child .card-content ul {
+  .grid.featured .card:nth-child(even) .card-content ul {
     justify-content: start;
   }
 }
