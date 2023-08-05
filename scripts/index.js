@@ -107,11 +107,14 @@ const projectData = {
 };
 
 fRepo[0].href = projectData.featuredProjects[1].repo;
+fRepo[1].href = projectData.featuredProjects[2].repo;
+fRepo[2].href = projectData.featuredProjects[3].repo;
 
 projectData.featuredProjects.forEach((project, index) => {
   fProjectTitle[index].textContent = project.title;
   fProjectDesc[index].textContent = project.desc;
   fProjectLink[index].href = project.link;
+
   for (let j = 0; j < projectData.featuredProjects[index].tech.length; j++) {
     fpTechList[
       index
