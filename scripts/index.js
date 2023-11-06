@@ -21,6 +21,12 @@ const projectLink = document.querySelectorAll('.live-site');
 const projectData = {
   featuredProjects: [
     {
+      title: 'SalesPick: Warehouse Management App',
+      desc: 'Full-stack Inventory Management app, built with JavaScript and React for the frontend and Ruby on Rails with PostgreSQL, for the backend.',
+      tech: ['React', 'Ruby on Rails', 'PostgreSQL'],
+      link: 'https://salespick.onrender.com',
+    },
+    {
       title: 'BookLogue: Reading Manager',
       desc: 'An iOS app that allows users to track their reading progress and add notes about the books they read.',
       tech: ['Swift', 'Xcode', 'Cocoapods', 'Firebase'],
@@ -94,21 +100,12 @@ const projectData = {
       repo: 'https://github.com/TonyHansord/FrontEndMentorChallenges/tree/master/skilled-elearning-landing-page',
       liveSite: 'https://tonyhansord-elearning-landing-page.netlify.app',
     },
-    {
-      title: 'Wedding Website',
-      type: 'Other',
-      description:
-        "A website I built with GoDaddy Website builder, for my wife and I's wedding.",
-      tech: ['GoDaddy'],
-      repo: '',
-      liveSite: 'https://www.katntony.com',
-    },
   ],
 };
 
-fRepo[0].href = projectData.featuredProjects[1].repo;
-fRepo[1].href = projectData.featuredProjects[2].repo;
-fRepo[2].href = projectData.featuredProjects[3].repo;
+fRepo[0].href = projectData.featuredProjects[2].repo;
+fRepo[1].href = projectData.featuredProjects[3].repo;
+fRepo[2].href = projectData.featuredProjects[4].repo;
 
 projectData.featuredProjects.forEach((project, index) => {
   fProjectTitle[index].textContent = project.title;
